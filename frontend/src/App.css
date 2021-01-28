@@ -1,0 +1,15 @@
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f8; 
+  }
+  
+  .main{
+    max-width:900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  

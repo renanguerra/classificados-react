@@ -1,0 +1,36 @@
+.card{
+    width: 200px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    overflow: auto;
+    flex: 1 1 250px;
+    white-space: normal;
+    word-wrap: break-word;
+    background-color: #FFF;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    background: rgb(91,182,198);
+    background: linear-gradient(90deg, rgba(91,182,198,1) 0%, rgba(7,91,151,1) 100%);
+}
+
+.card-body{
+    height: 15vh;
+    padding: 6px;
+}
+.card-date{
+    display: block;
+    text-align: right;
+}
