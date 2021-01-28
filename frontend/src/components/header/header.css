@@ -38,3 +38,13 @@
     cursor: pointer;
     transition:all 0.3s ease;
 }
+
+@media (max-width:600px) { 
+    .text-header{
+        display: none;
+    }
+    .header-input{
+        width: 110px;
+    }
+    
+ }

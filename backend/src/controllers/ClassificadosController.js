@@ -13,7 +13,9 @@ module.exports = {
     },
 
     async index(req,res){
-        const classificados = await Classificados.findAll()
+        const classificados = await Classificados.findAll({
+            order: [['id', 'DESC']]
+        })
 
         return res.json(classificados)
     },
@@ -23,8 +25,10 @@ module.exports = {
 
         const classificados = await Classificados.findAll({
             where: {
-                title: {[Op.like]: `%${title}%`}
-            }
+                title: {[Op.like]: `%${title}%`},
+            },
+            order: [['id', 'DESC']]
+            
         })
         return res.json(classificados)
     }

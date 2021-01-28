@@ -23,21 +23,20 @@ function App() {
         setData(res.data)
       })
     }else{
-      await axios.get(`http://localhost:3333/search/${title}`).then(res =>{
+      axios.get(`http://localhost:3333/search/${title}`).then(res =>{
         setData(res.data)
-      }).then(
-        console.log(data)
-      ).catch(e => {
-        console.log('Não encontrado')
       })
     }
       
   }
 
+
   return (
     <>
-      <Header/>
-      <input id='input-search' onChange={e => {setTitle(e.target.value)}} onKeyUp={search} type='text' placeholder='Pesquisar' className='header-input'/>
+      <Header >
+        <input id='input-search' onChange={e => {setTitle(e.target.value)}} onKeyUp={search} type='text' placeholder='Pesquisar' className='header-input'/>
+      </Header>
+
       <div className='main'>
         {data.map(classificados => <Card
               title={classificados.title}
