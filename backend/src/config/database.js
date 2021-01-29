@@ -5,6 +5,6 @@ module.exports = {
     password: 'suasenha',
     database: 'bancodesafio',
     define: {
-        timestamps:true
+      timestamps:true
     }
 }
